@@ -1,19 +1,6 @@
 const Discord = require('discord.js');
-const config = require('../../configs/config.json');
-
-
-
-module.exports = {
-    config: {
-        name: 'eval',
-        description: 'Eval',
-        aliases: [""],
-        usage: '<user>',
-        accessableby: "not you",
-    },
-    run: async (client, message, args) => {
-     
-       let array = config.dev
+module.exports.run = async(client, message) => {
+let array = "YOUR_DISCORD_ID"
   
   if(!array.includes(message.author.id.toString())) {
     return message.channel.send("Only people who are worthy enough can use it")
@@ -42,5 +29,4 @@ module.exports = {
             });
         });
       
-    }
-}
+    };
