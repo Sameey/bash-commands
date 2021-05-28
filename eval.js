@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-module.exports.run = async(client, message) => {
 let array = "YOUR_DISCORD_ID"
   
   if(!array.includes(message.author.id.toString())) {
@@ -28,5 +27,3 @@ let array = "YOUR_DISCORD_ID"
                 code: "js"
             });
         });
-      
-    };
